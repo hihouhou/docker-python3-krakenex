@@ -7,9 +7,9 @@
 # Pull base image.
 FROM debian:latest
 
-MAINTAINER hihouhou < hihouhou@hihouhou.com >
+LABEL org.opencontainers.image.authors="hihouhou < hihouhou@hihouhou.com >"
 
-# Update & install packages for graylog
+# Update & install packages for Python3-krakenex
 RUN apt-get update && \
     apt-get install -y python3 python3-pip
 
